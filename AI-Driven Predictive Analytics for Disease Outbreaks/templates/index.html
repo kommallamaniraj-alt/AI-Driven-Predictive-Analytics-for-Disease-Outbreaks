@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>AI-Driven Predictive Analytics for Disease Outbreaks</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<style>
+body {
+  background-image: url({{ url_for('static', filename='images/back.jpg') }});
+}
+</style>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<center><font size="4" color="white">AI-Driven Predictive Analytics for Disease Outbreaks</font></center></font>
+		</div>
+		<div id="slogan">
+			
+		</div>
+	</div>
+	<div id="menu">
+		<ul><center>
+	  <li><a href="index"><font size="" color="white">Home</a></font></li>
+      <li><a href="Predict"><font size="" color="white">Predict Disease Outbreak</a></li>
+   	</center></ul>
+		<br class="clearfix" />
+	</div>
+	<div id="splash">
+		<img class="pic" src={{ url_for('static', filename='images/investor.jpg') }} width="870" height="230" alt="" />
+	</div>
+	<br/>
+	<font size="3" color="black"><center>{{ data|safe }}</center></font><br/>
+		<img src="data:image/png;base64, {{ img }}" alt="" />
+</body>
+</html>
